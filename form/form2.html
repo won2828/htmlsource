@@ -25,8 +25,22 @@
         value : 입력값(단, radio, checkbox 의 경우 value 의 값이 따라감)
         6) <input type="reset"> : form 초기화(입력값 삭제)
         7) <input type="button"> : 버튼 모양만 제공 기능은 없음 (javascript 와 연동해서 사용)
+        8) <input type="email"> : 이메일 형식에 맞게 입력이 되었는지 확인
+        9) <input type="file"> : 파일 첨부 처리
+        10) <input type="hidden"> : 사용자가 입력하는 값은 아니고, 서버단에서 특정 처리를 하기 위해 필요한 값
+        11) <input type="number"> : 숫자 입력만 가능
+
+        12) <input type="color"> : 색상 지정
+        13) <input type="date"> : 날짜(년-월-일)
+        14) <input type="datetime-local"> : 날짜/시간
+        15) <input type="month"> : 날짜(년-월)
+        16) <input type="time"> : 시간(시분초)
+        17) <input type="url"> : URL 형식에 맞게 입력이 되었는지 확인
+        18) <input type="search"> : 검색어를 한꺼번에 지울 수 있는 기능 제공
+        19) <input type="range"> : min,max,step 속성과 같이 사용해서 특정 범위의 값 선택
+        20) <input type="tel"> : pattern 속성과 같이 사용해서 전화번호 검증
     -->
-    <form action="" method="get">
+    <form action="" method="get" novalidate>
       <div>
         <label for="name">이름</label>
         <input type="text" name="username" id="name" />
@@ -60,6 +74,67 @@
       <div>
         <label for="password">비밀번호</label>
         <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <!-- validation : 유효성 검증 (입력을 하면) -->
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="file">파일</label>
+        <input type="file" name="file" id="file" multiple />
+      </div>
+      <div>
+        <label for="">hidden</label>
+        <input type="hidden" name="num" value="3487" />
+      </div>
+      <div>
+        <label for="">수량</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="5" />
+      </div>
+      <div>
+        <label for="color">color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <div>
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" />
+        <input type="month" name="date" id="date" />
+        <input type="time" name="date" id="date" />
+      </div>
+      <div>
+        <label for="datetime">date</label>
+        <input type="datetime-local" name="datetime" id="datetime" />
+      </div>
+      <div>
+        <label for="url">url</label>
+        <!-- validation : 유효성 검증 (입력을 하면) -->
+        <input type="url" name="url" id="url" />
+      </div>
+      <div>
+        <label for="search">search</label>
+        <input type="search" name="search" id="search" />
+      </div>
+      <div>
+        <label for="range">range</label>
+        <input
+          type="range"
+          name="range"
+          id="range"
+          min="0"
+          max="50"
+          step="10"
+        />
+      </div>
+      <div>
+        <label for="tel">tel</label>
+        <!-- pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" : 숫자3-숫자4-숫자4 -->
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"
+        />
       </div>
       <div>
         <input type="submit" value="제출" />
