@@ -1,0 +1,31 @@
+.left {
+  text-align: left;
+  /* 자간조절 */
+  letter-spacing: 10px;
+}
+.right {
+  text-align: right;
+  /* 단어 간격 조절 */
+  word-spacing: 10px;
+}
+.center {
+  text-align: center;
+}
+.justify {
+  /* 양쪽정렬 */
+  text-align: justify;
+}
+.indent {
+  /* 들여쓰기 */
+  /* text-indent: 50px; */
+  /* 내여쓰기 */
+  text-indent: -50px;
+}
+.title {
+  /* 취소선 */
+  /* text-decoration: line-through; */
+  /* 윗줄 */
+  /* text-decoration: overline; */
+  /* 밑줄 */
+  text-decoration: underline;
+}

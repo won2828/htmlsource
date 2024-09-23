@@ -1,0 +1,58 @@
+p:first-child {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold; /* 400(default) */
+  /* 
+    컴퓨터에 설치(url(C:/Windows/Fonts)된 폰트 사용
+    폰트명이 공백이 있는 경우 "" 사용
+    폰트를 여러개 지정할 경우 왼쪽에 있는 폰트부터 사용
+
+    폰트 계열
+    1) monospace
+    2) serif
+    3) sans-serif
+    4) cursive
+
+    웹폰트
+    웹에 있는 폰트 적용
+  */
+  font-family: "Courier New", Courier, monospace;
+}
+
+p:first-child {
+  /* font shorthand */
+  font: italic bold 12px Arial, serif;
+}
+
+div {
+  font-size: 24px;
+  /* line-height: 30px; */
+  line-height: 1.5; /* 글자 크기의 배수 지정 */
+}
+
+.serif {
+  /* 바탕체 계열 */
+  font-family: serif;
+}
+
+.sans-serif {
+  /* 고딕체 계열 */
+  font-family: sans-serif;
+}
+
+.monospace {
+  /* 고정너비 */
+  font-family: monospace;
+}
+
+.cursive {
+  /* 필기체 */
+  font-family: cursive;
+}
+
+.ko {
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}

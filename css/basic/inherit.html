@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 외부 파일로 작성된 css 삽입 -->
+    <link rel="stylesheet" href="./mystyle.css" />
+    <style>
+      /* css 작성 가능 */
+      /* .area p {
+        color: green;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 
+        CSS : 상속 / 우선순위
+
+        글자를 다루는 속성들이 주로 상속 됨
+
+        우선순위
+        1.명시도 점수가 높은 선언이 우선함
+            !important > 인라인선언(style="color: fuchsia") > 아이디 > 클래스 > 태그 > 전체 > 상속
+                1000점 > 500점 > 100점 > 10점 > 1점
+        2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선함
+        3. 가상요소(::before, ::after) : 태그 선택자와 동일한 점수
+            가상클래스(:hover, :focus) : 클래스 선택자와 동일한 점수
+            부정선택자(:not(선택자)) : not() 자체는 점수가 없고, 선택자에 의해서만 점수 부여됨 
+                :not(h1) 1점        :not(.box) 10점
+    -->
+    <div class="ecosystem">
+      <div class="animal">
+        동물
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <div class="plant">식물</div>
+    </div>
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        earum autem veritatis suscipit sit excepturi, voluptatem commodi minima
+        voluptatibus saepe eius eveniet deserunt unde corporis recusandae nihil
+        pariatur magnam sed necessitatibus culpa. Corrupti est, illum
+        repudiandae minima sequi amet reprehenderit quibusdam officiis, cum hic
+        veniam, eius illo animi ducimus odio.
+      </p>
+      <p id="text2" style="color: fuchsia">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+        similique minus labore doloribus obcaecati sit est, facere sint sunt
+        dolorem dolores accusantium ab aperiam. Optio, aspernatur maiores.
+        Voluptatibus vel unde rerum voluptas maxime minus repudiandae aliquid
+        ullam. Nemo dolorem et amet eos, qui aliquam adipisci ullam cum deserunt
+        optio dolores.
+      </p>
+    </div>
+  </body>
+</html>
