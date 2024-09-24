@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        overflow : 요소의 크기 이상으로 내용(자식요소)이 넘쳤을 때 처리
+        1) visiable(default) : 넘친 부분을 그대로 보여줌
+        2) auto : 넘친 부분이 있는 경우 잘라내고, 스크롤바를 이용해서 볼 수 있도록 함
+        3) hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+        4) scroll : 넘친 부분이 있는 경우 잘라내고, 가로,세로 스크롤바를 이용해서 볼 수 있도록 함
+        */
+      .overflow {
+        /* block => width : auto(100%), height : 0 */
+        height: 100px;
+        background-color: silver;
+        border: 1px solid red;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde
+      perspiciatis soluta reiciendis et, veniam cupiditate quae tenetur eum,
+      ipsa ex asperiores deserunt quas dolorum dolores quidem recusandae, minus
+      perferendis molestiae id voluptate sed. Esse temporibus vero quod
+      laboriosam modi, nostrum dolorem blanditiis minus neque non voluptatum
+      placeat officia deleniti animi eaque pariatur! Rerum alias facere sunt
+      dolore nemo similique nostrum animi fugiat, soluta, perspiciatis,
+      dignissimos illum temporibus suscipit assumenda tenetur quidem debitis
+      cumque doloremque nobis minima quaerat non rem. Eaque harum quaerat sunt
+      voluptatibus ipsum eligendi, quasi commodi fugit ratione voluptas suscipit
+      a et expedita iste. Error, rem temporibus! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Qui unde perspiciatis soluta reiciendis et,
+      veniam cupiditate quae tenetur eum, ipsa ex asperiores deserunt quas
+      dolorum dolores quidem recusandae, minus perferendis molestiae id
+      voluptate sed. Esse temporibus vero quod laboriosam modi, nostrum dolorem
+      blanditiis minus neque non voluptatum placeat officia deleniti animi eaque
+      pariatur! Rerum alias facere sunt dolore nemo similique nostrum animi
+      fugiat, soluta, perspiciatis, dignissimos illum temporibus suscipit
+      assumenda tenetur quidem debitis cumque doloremque nobis minima quaerat
+      non rem. Eaque harum quaerat sunt voluptatibus ipsum eligendi, quasi
+      commodi fugit ratione voluptas suscipit a et expedita iste. Error, rem
+      temporibus!
+    </p>
+  </body>
+</html>

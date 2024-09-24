@@ -1,0 +1,17 @@
+body {
+  background: #ddd;
+}
+
+.box {
+  background-color: white;
+  /* height: 50px; */
+  overflow: hidden; /* auto; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header : 배경색#666, 안쪽여백 30, 글자 가운데 정렬, 글자크기 35, 글자색 흰색 */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* nav : 너비 30%, 배경색#ccc, 안쪽여백 20, 높이 300 */
+nav {
+  float: left;
+  width: 30%;
+  background-color: #ccc;
+  padding: 20px;
+  height: 300px;
+}
+nav ul {
+  list-style-type: none;
+}
+
+/* article : 너비 70%, 배경색#f1f1f1, 안쪽여백 20, 높이 300 */
+article {
+  float: left;
+  width: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 300px;
+}
+
+/* footer : 글자 가운데 정렬, 글자색 흰색, 안쪽여백 10, 배경색#777 */
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: #777;
+}
+
+/* clearfix 를 이용한 float 해제 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

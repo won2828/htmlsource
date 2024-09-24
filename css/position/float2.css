@@ -1,0 +1,17 @@
+.child {
+  width: 150px;
+  height: 100px;
+  background-color: tomato;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  float: left;
+}
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: olive;
+  color: white;
+  font-size: 30px;
+  clear: both;
+}

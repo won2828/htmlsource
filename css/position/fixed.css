@@ -1,0 +1,37 @@
+/* 
+    position : 요소들을 좌우로 배치하는 것에서 벗어나 ㅣ준 위치 내에서 자유롭게 배치하는 방법
+
+    1) static(default)
+    2) relative : 요소 자신을 기준으로 배치(타 요소 영향 받지 않음)
+    3) absolute : 위치 상 부모 요소를 기준으로 배치
+        - 부모 요소(static 아니면 됨 - 주로 relative 가 부모)를 반드시 지정해야 함
+        - 부모 요소가 없다면 브라우저 기준
+    4) fixed : 브라우저(뷰포트)를 기준으로 배치(하단 광고 띄울 때 주로 사용)
+    5) sticky : 스크롤 영역 기준으로 배치
+*/
+
+.grand-parent {
+  width: 800px;
+  height: 500px;
+  border: 2px dashed lightgray;
+}
+
+.parent {
+  width: 500px;
+  height: 400px;
+  border: 2px dashed gray;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.fixed {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}

@@ -1,0 +1,27 @@
+/* 
+    float :
+    1) left
+    2) right
+
+    float 다음에 오는 요소에 대한 처리가 필요함(float 해체)
+    clear:left, clear:right, clear:both
+
+    1) float 다음 요소에 clear:both (float2.html 참조)
+    2) overflow:hidden or auto (float3.html 참조)
+    3) 가상요소 이용(float4.html 참조 - 추천)
+    
+*/
+
+.picture {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.picture img {
+  vertical-align: top;
+}
+
+p {
+  /* border: 4px solid black; */
+}

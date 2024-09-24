@@ -1,0 +1,33 @@
+/* container : 너비 500, 높이 300, 가운데, 배경색 yellow */
+.container {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: yellow;
+  position: relative;
+}
+/* 자식요소 너비 100, 높이 100, 색상은 다르게 */
+.box {
+  /* width: 100px; */
+  height: 100px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.a {
+  background-color: red;
+  right: 100%;
+  top: 100px;
+}
+
+.b {
+  background-color: green;
+  right: 200px;
+  top: 100px;
+}
+
+.c {
+  background-color: blue;
+  left: 100%;
+  bottom: 100px;
+}
