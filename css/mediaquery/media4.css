@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topnav {
+  background-color: #333;
+}
+
+/* .topnav a:link {
+    text-decoration: none;
+} */
+
+.topnav a {
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  /* inline 요소는 padding 이 반영이 잘 안됨 => block 요소 변경 */
+  /* block 변경 : 1) inline-block 2) float */
+  /* display: inline-block; */
+  float: left;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* max-width : 600 */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
