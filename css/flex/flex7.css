@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+}
+
+/* h1 : 3em, 가운데 정렬 */
+#container h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#menus {
+  width: 100%;
+}
+
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5 {
+  width: 100%;
+}
+
+/* 테두리 부여, 아래쪽 여백 15 */
+#menus > div {
+  height: 400px;
+  width: 100%;
+  border: 2px solid #c07878;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* 
+    text-shadow : x y blur-radius 그림자색상
+    x : 양수(글자 오른쪽), 음수(글자 왼쪽)
+    y : 양수(글자 아래쪽), 음수(글자 윗쪽)
+    blur-radius :숫자가 커질수록 그림자가 흐릿해짐
+ */
+
+#menus h2 {
+  position: absolute;
+  right: 3%;
+  bottom: 10px;
+  color: white;
+  font-size: 2em;
+  text-shadow: 3px 3px 5px black;
+}
+
+/* menu1 ~ menu5 배경이미지 : dish1~dish5 */
+
+#menu1 {
+  /* background-image: url(../img/dish1.jpg);
+  background-repeat: no-repeat;
+  background-position: center; */
+  background: url(../img/dish1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#menu2 {
+  background: url(../img/dish2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#menu3 {
+  background: url(../img/dish3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#menu4 {
+  background: url(../img/dish4.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#menu5 {
+  background: url(../img/dish5.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* footer : 배경색 #373737, 높이 200 */
+footer {
+  background-color: #373737;
+  height: 200px;
+}
+
+/* footer p : 글자색 #eee, 가로,세로 가운데 정렬, 1.2em */
+footer p {
+  color: #eee;
+  text-align: center;
+  line-height: 200px;
+  font-size: 1.2em;
+}
+
+/* min-width 768 */
+@media screen and (min-width: 768px) {
+  #menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4 {
+    width: 49%;
+  }
+  #menu5 {
+    width: 100%;
+  }
+}
+
+/* min-width 992 */
+@media screen and (min-width: 992px) {
+  #menu1,
+  #menu2,
+  #menu3,
+  #menu4,
+  #menu5 {
+    width: 33%;
+  }
+
+  #menu5 {
+    flex: 2 2 0;
+    margin-left: 0.5%;
+  }
+}
